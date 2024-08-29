@@ -1,19 +1,11 @@
 ---
-import { Image } from 'astro:assets';
 import Layout from '@/layouts/Layout.astro';
-
-import koalaBg from '@/assets/images/koala_bg_web.webp';
 ---
 
 <Layout title="Koalie">
-	<main class="relative">
-		<div class="relative z-50 w-full pt-10 text-center">
+	<main class="main-bg">
+		<div class="z-50 w-full pt-10 text-center">
 			<h1 class="text-7xl font-bold text-white">Koalie</h1>
 		</div>
-		<Image
-			src={koalaBg}
-			alt="Koala Backdrop"
-			class="absolute left-0 top-0 z-0 h-screen w-screen object-cover"
-		/>
 	</main>
 </Layout>
