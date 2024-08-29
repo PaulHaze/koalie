@@ -1,0 +1,74 @@
+@tailwind base;
+@tailwind components;
+@tailwind utilities;
+
+@layer base {
+	h1 {
+		@apply text-4xl font-normal leading-normal;
+	}
+	h2 {
+		@apply text-3xl font-normal leading-normal;
+	}
+	h3 {
+		@apply text-2xl font-normal leading-normal;
+	}
+	h4 {
+		@apply text-xl font-normal leading-normal;
+	}
+	h5 {
+		@apply text-lg font-normal leading-normal;
+	}
+	.bg-primary * {
+		@apply text-primary-content/90;
+	}
+	.bg-secondary * {
+		@apply text-secondary-content/90;
+	}
+	.bg-accent * {
+		@apply text-accent-content;
+	}
+	.bg-neutral * {
+		@apply text-neutral-content;
+	}
+	.bg-info * {
+		@apply text-info-content/90;
+	}
+	.bg-success * {
+		@apply text-success-content/90;
+	}
+	.bg-warning * {
+		@apply text-warning-content/90;
+	}
+	.bg-error * {
+		@apply text-error-content/90;
+	}
+}
+
+@layer components {
+}
+
+@layer utilities {
+	.dark-gradient {
+		background: linear-gradient(
+			transparent 0%,
+			transparent 37%,
+			rgba(0, 0, 0, 0.2) 100%
+		);
+	}
+	.light-gradient {
+		background: linear-gradient(
+			transparent 0%,
+			transparent 57%,
+			rgba(0, 0, 0, 0.1) 100%
+		);
+	}
+	.bb {
+		@apply border border-red-600 sm:border-blue-600 md:border-green-600 lg:border-black;
+	}
+	.bb2 {
+		@apply border border-green-600 sm:border-red-600 md:border-blue-600 lg:border-pink-600;
+	}
+	.flex-center {
+		@apply flex items-center justify-center;
+	}
+}
