@@ -36,6 +36,9 @@ export default {
 			center: true,
 		},
 		extend: {
+			fontFamily: {
+				header: ['"League Spartan Variable"'],
+			},
 			// fontSize: {
 			// 	xs: '0.75rem',
 			// 	sm: '0.875rem',
