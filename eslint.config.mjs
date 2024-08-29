@@ -24,5 +24,6 @@ export default [
 		// override/add rules settings here, such as:
 		// "astro/no-set-html-directive": "error"
 		// 'no-unused-vars': 'warn'
+		'@typescript-eslint/triple-slash-reference': 'off',
 	},
 ];
