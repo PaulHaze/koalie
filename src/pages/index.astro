@@ -1,9 +1,12 @@
 ---
+import { Image } from 'astro:assets';
 import Layout from '@/layouts/Layout.astro';
+
+import koalaBg from '@/assets/images/koala_bg_web.webp';
 ---
 
-<Layout title="Simple Barebones Astro + Tailwind Starter Template">
-	<main class="relative flex w-full justify-center pt-10 text-center">
-		<h3 class="">Bare Bones Astro + Tailwind Starter</h3>
+<Layout title="Koalie">
+	<main class="relative">
+		<Image src={koalaBg} alt="Koala Backdrop" />
 	</main>
 </Layout>
